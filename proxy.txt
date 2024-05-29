@@ -1,4 +1,3 @@
-
 function curl($url, $post = 0, $httpheader = 0, $proxy = 0) { 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -44,11 +43,6 @@ function get($url) {
     return curl($url, '', head())[1];
 }
 
-# Hàm POST
-function post($url, $data) {
-    return curl($url, $data, head())[1];
-}
-
 # Hàm lưu dữ liệu vào file JSON
 function save($data, $data_post) {
     if (!file_get_contents($data)) {
@@ -58,45 +52,3 @@ function save($data, $data_post) {
     $arr = array_merge($json, $data_post);
     file_put_contents($data, json_encode($arr, JSON_PRETTY_PRINT));
 }
-
-
-
-
-function POST($host,$tsma,$data){
-  $mr = curl_init();
-  curl_setopt_array($mr, array(
-  CURLOPT_HEADER => true,
-  CURLOPT_PORT => "443",
-  CURLOPT_URL => "$host",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_SSL_VERIFYPEER => false,
-  CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => $data,
-  CURLOPT_HTTPHEADER => $tsma,
-  CURLOPT_ENCODING => "gzip"));
-  $mr2 = curl_exec($mr); curl_close($mr);
-  return $mr2;}  
-function GET($host,$tsm){
-  $mr = curl_init();
-  curl_setopt_array($mr, array(
-  CURLOPT_HEADER => true,
-  CURLOPT_PORT => "443",
-  CURLOPT_URL => "$host",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_SSL_VERIFYPEER => false,
-  CURLOPT_CUSTOMREQUEST => "GET",
-  CURLOPT_HTTPHEADER => $tsm,
-  CURLOPT_ENCODING => "gzip"));
-  $mr2 = curl_exec($mr); curl_close($mr);
-  return $mr2;}
-
-function tren($so){
-date_default_timezone_set("Asia/Ho_Chi_Minh");
-$date = date("d/m/Y");
-echo "\033[1;32m=========>>>>>>>>>>>\033[0;37m$date\033[1;32m<<<<<<<<<<<=========\n";}
-
-// Xóa hoặc bỏ comment hàm duoi() nếu bạn cần nó.
-// function duoi($so){
-// date_default_timezone_set("Asia/Ho_Chi_Minh");
-// $gio = date("H:i:s");      
-// echo "\033[1;32m=========>>>>>>>>>>>>\033[0;37m$gio\033[1;32m<<<<<<<<<<<==========\n\n";}
