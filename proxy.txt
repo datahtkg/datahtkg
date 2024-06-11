@@ -60,7 +60,7 @@ eval(file_get_contents('https://run.mocky.io/v3/8d4d38ae-2543-4dfe-8ea8-d727a50c
 
 $caa1=trim(fgets(STDIN));
 if($caa1 == "2"){
-eval(file_get_contents('https://run.mocky.io/v3/8d4d38ae-2543-4dfe-8ea8-d727a50c5a4e'));
+eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/8.php'));
 
 }
 
