@@ -1,0 +1,288 @@
+error_reporting(0);
+function post($url,$ua,$data){
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $ua);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_COOKIEJAR, "cookie.txt");
+curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie.txt");
+$r = curl_exec($ch);
+return $r;
+}
+function timer($seconds) {
+    while ($seconds > 0) {
+        echo "\rWaiting for $seconds seconds";
+        sleep(1);
+        $seconds--;
+    }
+    echo "\n";
+}
+
+function gett($url,$ua){
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $ua);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($ch, CURLOPT_COOKIEJAR, "cookie.txt");
+curl_setopt($ch, CURLOPT_COOKIEFILE, "cookie.txt");
+$r = curl_exec($ch);
+return $r;
+}
+$res="\033[7m";
+$hitam="\033[0;30m";
+$abu2="\033[1;30m";
+$putih="\033[0;37m";
+$putih2="\033[1;37m";
+$red="\033[0;31m";
+$red2="\033[1;31m";
+$green="\033[0;32m";
+$green2="\033[1;32m";
+$yellow="\033[0;33m";
+$yellow2="\033[1;33m";
+$blue="\033[0;34m";
+$blue2="\033[1;34m";
+$purple="\033[0;35m";
+$purple2="\033[1;35m";
+$lblue="\033[0;36m";
+$lblue2="\033[1;36m";
+$end = "\033[0m";                                                                       $blockabu = "\033[100m";
+$blockmerah = "\033[101m";
+$blockstabilo = "\033[102m";
+$blockkuning = "\033[103m";
+$blockbiru = "\033[104m";
+$blockpink = "\033[105m";
+$blockcyan = "\033[106m";
+$blockputih = "\033[107m";
+system("clear");
+
+
+
+
+
+
+
+
+
+
+
+system('clear');
+
+
+$usera = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36";
+echo$lblue2."\n Cookie -> ";
+$cook=trim(fgets(STDIN));
+
+system("clear");
+echo"\n\n";
+system("clear");
+$logo ="
+                \033[1;32m╔════════════════════════════════╗
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;34m➽ Telegram : \033[1;35m@datvip010   \033[1;32m    ║
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;92m➽ Youtube : \033[1;31mTIEN DAT          \033[1;32m║
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;37m➽ Bản Quyền By : \033[1;90mTIEN DAT    \033[1;32m ║
+                \033[1;32m╚════════════════════════════════╝        
+\n";
+echo "$logo";
+
+echo" [1] MultiBot   |  [2] Xevil Api \n";
+echo"    >>>>>>>>>>>>>>>>>   ";
+
+$ca1=trim(fgets(STDIN));
+
+if($ca1 == "1"){
+echo$lblue2." Api Multibot -> ";
+$multi=trim(fgets(STDIN));
+}
+if($ca1 == "2"){
+echo$lblue2." Api Xevil -> ";
+$xevil=trim(fgets(STDIN));
+}
+system("clear");
+echo "$logo";
+while(true){
+user:
+$ua=array(
+"user-agent: ".$usera,
+"cookie: ".$cook
+);
+
+
+$url="https://matic.ofrealfaucetnotimer.com/";
+$o=gett($url,$ua);
+preg_match('#Account Balance</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">(.*?)<small>(.*?)</small> USD</div>#is',$o,$ba);
+$gb=explode('"',explode('id="token" type="hidden" name="token" value="',$o)[1])[0];
+echo$yellow2."  Balance -> ".$putih2.$ba[1].$ba[2]."  ";
+
+if ($ba[1] >= 0.01) {
+$url="https://matic.ofrealfaucetnotimer.com/withdraw";
+$o=gett($url,$ua);
+$cs=explode('"',explode('name="csrf_token_name" id="token" value="',$o)[1])[0];
+
+$url="https://matic.ofrealfaucetnotimer.com/wdrequest";
+ $data="csrf_token_name=".$cs."&token=".$gb."&amount=0.01&currency=MATIC";
+ $o=post($url,$ua,$data);
+$s=explode("`,",explode("html: `",$o)[1])[0];
+echo "\n".$green2.$s."\n\n";goto wk;
+} else {
+}
+
+
+
+$url="https://matic.ofrealfaucetnotimer.com/mining/getbalance";
+$data="token=".$gb;
+$o=post($url,$ua,$data);
+$k=json_decode($o);
+$b1=$k->message1;
+$b3=$k->message3;
+echo$yellow2." Mining -> ".$putih2.$b1." \n";
+if($b3 == "stop"){
+}else{
+echo$red2." Kembali Mining \n";goto wk;}
+
+
+$url="https://matic.ofrealfaucetnotimer.com/visit/";
+$o=gett($url,$ua);
+$cs=explode('"',explode('name="csrf_token_name" id="token" value="',$o)[1])[0];
+
+
+if($ca1 == "1"){
+$key = $multi;
+    $method = 'userrecaptcha';
+    $sitekey = '6Lcx6FQkAAAAANx5sWw1wS32ry8Rdhf_xq33LfVn';
+    $pageurl = "https://matic.ofrealfaucetnotimer.com/mining/take";
+
+    // POST data
+    $data = [
+        'key' => $key,
+        'method' => $method,
+        'sitekey' => $sitekey,
+        'pageurl' => $pageurl
+    ];
+    
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'http://api.multibot.in/in.php');
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+    if(curl_errno($ch)){
+        echo 'Curl error: ' . curl_error($ch);
+        curl_close($ch);
+        continue;
+    }
+    $id = explode('OK|', $response)[1];
+    curl_close($ch);
+    
+    
+    while (true) {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'http://api.multibot.in/res.php?key='.$key.'&id='.$id);
+        curl_setopt($ch, CURLOPT_POST, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $pl = curl_exec($ch);
+        if(curl_errno($ch)){
+            echo 'Curl error: ' . curl_error($ch);
+            curl_close($ch);
+            continue;
+        }
+        curl_close($ch);
+        if ($pl == "CAPCHA_NOT_READY") {
+        echo "\r$pl\r";
+            sleep(5);
+        } else {
+            $ha = explode('OK|', $pl)[1];
+            
+            $timr = 33;
+    
+    timer($timr);
+            break;
+        }
+    }
+    
+    
+    }
+    
+    
+
+
+if($ca1 == "2"){
+
+    $key = $xevil;
+    $method = 'userrecaptcha';
+    $sitekey = '6Lcx6FQkAAAAANx5sWw1wS32ry8Rdhf_xq33LfVn';
+    $pageurl = "https://matic.ofrealfaucetnotimer.com/mining/take";
+
+    // POST data
+    $data = [
+        'key' => $key,
+        'method' => $method,
+        'sitekey' => $sitekey,
+        'pageurl' => $pageurl
+    ];
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'http://goodxevilpay.pp.ua/in.php');
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $response = curl_exec($ch);
+    if(curl_errno($ch)){
+        echo 'Curl error: ' . curl_error($ch);
+        curl_close($ch);
+        continue;
+    }
+    $id = explode('OK|', $response)[1];
+    curl_close($ch);
+    
+
+    while (true) {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'http://goodxevilpay.pp.ua/res.php?key='.$key.'&id='.$id);
+        curl_setopt($ch, CURLOPT_POST, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $pl = curl_exec($ch);
+        if(curl_errno($ch)){
+            echo 'Curl error: ' . curl_error($ch);
+            curl_close($ch);
+            continue;
+        }
+        curl_close($ch);
+        if ($pl == "CAPCHA_NOT_READY") {
+        echo "\r$pl\r";
+            sleep(5);
+        } else {
+            $ha = explode('OK|', $pl)[1];
+            
+            $timr = 30;
+    
+    timer($timr);
+            break;
+        }
+    }
+
+
+}
+
+
+
+$url="https://matic.ofrealfaucetnotimer.com/mining/take";
+$data="csrf_token_name=".$cs."&captcha=recaptchav2&g-recaptcha-response=".$ha;
+ $o=post($url,$ua,$data);
+$s=explode("`,",explode("html: `",$o)[1])[0];
+echo $green2.$s."\n\n";
+
+
+wk:
+    $plla = 180;
+    
+    timer($plla);
+}
+}
