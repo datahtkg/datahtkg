@@ -1,0 +1,431 @@
+system('clear');
+error_reporting(0);
+$yellow = "\033[0;33m";
+$maufullxduong= "\e[1;47;34m";
+$maufulldo= "\e[1;47;31m";
+$end="\033[0m";
+$whiteb="\033[1;37m";
+$ress = "\033[0;32m";
+$res = "\033[0;33m";
+$red = "\033[0;31m";
+$green = "\033[0;37m";
+$yellow = "\033[0;33m";
+$white = "\033[0;33m";
+$Bxnhac = "\033[1;96m";
+$den = "\033[1;90m";
+$do = "\033[1;91m";
+$luc = "\033[1;92m";
+$vang = "\033[1;93m";
+$xduong = "\033[1;94m";
+$hong = "\033[1;95m";
+$trang = "\033[1;97m";
+$nenden = "\033[40m";
+$xanhd = "\033[0;36m";
+$nendo = "\033[41m";
+$nenxanh = "\033[42m";
+$nenvang = "\033[43m";
+$nenblue = "\033[44m";
+$nenPurpe = "\033[45m";
+$nenCyan = "\033[46m";
+$nentrang = "\033[47m";
+$UGreen = "\033[4;32m";
+$BGreen = "\033[1;32m";
+$maufullluc= "\e[1;47;32m";
+$maufullxnhac= "\e[1;47;36m";
+$maufullden= "\e[1;47;30m";
+$maufullvang= "\e[1;47;33m";
+$do = "\033[1;31m";
+$luc = "\033[1;32m";
+$vang = "\033[1;33m";
+$xduong = "\033[1;34m";
+$tim = "\033[1;35m";
+$xnhac = "\033[1;36m";
+$trang = "\033[1;37m";
+$hong = "\033[1;95m";
+$trang = "\033[1;97m";
+$ress = "\033[0;32m";
+$res = "\033[0;33m";
+$red = "\033[0;31m";
+$green = "\033[0;37m";
+$nau= "\e[38;5;94m";
+$white = "\033[0;33m";
+$res="\033[0m";
+$red="\033[1;31m";
+$white= "\033[1;37m";
+$whiteb= "\033[1;37m";
+$redb="\033[1;31m";
+$green="\033[1;32m";
+$yellow="\033[1;33m";
+$cam="\033[1;33m";
+$test="\033[1;33m";
+$greenb="\033[1;32m";
+
+$lam="\033[1;34m";
+$tmi="\033[1;34m";
+$hong="\033[1;35m";
+$imt="\033[1;35m";
+$cyan= "\e[1;36m";
+$syan="\033[1;36m";
+$xnhac= "\033[1;96m";
+$den="\033[1;90m";
+$do="\033[1;91m";
+$luc="\033[1;92m";
+$vang="\033[1;93m";
+$xduong="\033[1;94m";
+$hong="\033[1;95m";
+$trang="\033[1;97m";
+$vang="\033[1;93m";
+$do="\033[1;91m";
+$BBlack="\033[1;30m" ;
+$BRed="\033[1;31m"         ;
+$BGreen="\033[1;32m"       ;
+$BYellow="\033[1;33m"   ;
+$BBlue="\033[1;34m"        ;
+$BPurple="\033[1;35m"      ;
+$BCyan="\033[1;36m"   ;
+$BWhite="\033[1;37m"    ;
+$lime="\033[1;32m";
+$red="\033[1;31m";
+$xanh="\033[1;32m";
+$cyan="\033[1;36m";
+$yellow="\033[1;33m";
+$turquoise="\033[1;34m";
+$maugi="\033[1;35m";
+$white= "\033[1;37m";
+$BCyan="\033[1;36m";
+$trang="\033[1;37m";
+$do="\033[1;31m";
+$luc="\033[1;32m";
+$vang="\033[1;33m";
+$luc="\033[1;92m";
+$xnhac = "\033[1;36m";
+$do = "\033[1;31m";
+$luc = "\033[1;32m";
+$vang = "\033[1;33m";
+$xduong = "\033[1;34m";
+$hong = "\033[1;35m";
+$trang = "\033[1;37m";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//$ngang='$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-".$trang."-".$do."-\n';
+$logo ="
+                \033[1;32m╔════════════════════════════════╗
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;34m➽ Telegram : \033[1;35m@datvip0091   \033[1;32m    ║
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;92m➽ Youtube : \033[1;31mTIẾN ĐẠT          \033[1;32m║
+                \033[1;32m║\033[1;96m\033[1;91m\033[1;37m➽ Bản Quyền By : \033[1;90mTIẾN ĐẠT    \033[1;32m ║
+                \033[1;32m╚════════════════════════════════╝        
+\n";
+echo "$logo";
+
+@sleep(1);
+
+
+
+
+
+
+
+
+
+system('clear');
+
+echo "$logo\n";
+
+
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Nhập Cookie Aviso ".$do.": ".$trang;
+$coki = trim(fgets(STDIN));
+
+
+$uss ="Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Mobile Safari\/537.36";
+usleep(200000);
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$vang."Nhập Delay Trên 5 Giây Để Hạn Chế Khóa Acc\n";
+usleep(200000);
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Nhập Deley Nhiệm Vụ Tiếp Theo ".$do.": ".$trang;
+$g = trim(fgets(STDIN));
+system('clear');
+echo "$logo";
+//echo $xanh."                   •".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•".$xanh."•".$do."•".$hong."•".$vang."•
+//\n"$do."[".$vang."TIẾN ĐẠT".$do."] ".$green;
+//echo $xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-\n";
+function POST($host,$tsm,$data){
+  $mr = curl_init();
+  curl_setopt_array($mr, array(
+  CURLOPT_PORT => "443",
+  CURLOPT_URL => "$host",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_SSL_VERIFYPEER => false,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => $data,
+  CURLOPT_HTTPHEADER => $tsm));
+  $mr2 = curl_exec($mr); curl_close($mr);
+  return $mr2;}
+
+function GET($host,$tsm){
+       $mr = curl_init();
+       curl_setopt_array($mr, array(
+       CURLOPT_PORT => "443",
+       CURLOPT_URL => "$host",
+       CURLOPT_RETURNTRANSFER => true,
+       CURLOPT_SSL_VERIFYPEER => false,
+       CURLOPT_CUSTOMREQUEST => "GET",
+       CURLOPT_HTTPHEADER => $tsm));
+       $mr2 = curl_exec($mr); curl_close($mr);
+       return $mr2;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while (true){
+
+  $f1="Cookie:$coki";
+  $tsm=array($f1);
+  $url=get("https://aviso.bz/work-youtube",$tsm);
+  $ten=explode('<',explode('user-block-info-username">',$url)[1])[0];
+  $xu=explode(' руб.<',explode('new-money-ballans">',$url)[1])[0];
+  $kieu=explode('<',explode('/work-youtube">',$url)[1])[0];
+  // $fun=explode('&',explode('&dop_func=',$url)[1])[0];
+  $id=explode('"',explode('ads_id_',$url)[1])[0];
+  $ha1=explode("')",explode("hash=",$url)[1])[0];
+  //echo "Tên Của Bạn Là : $ten\n";
+  $ktt=explode('&',explode('func=youtube&dop_func=',$url)[1])[0];
+
+if ($ktt == "ads"){
+
+
+
+$f1="Cookie:$coki";
+$tsm=array($f1);
+$url=get("https://aviso.bz/work-youtube",$tsm);
+$ten=explode('<',explode('user-block-info-username">',$url)[1])[0];
+$xu=explode(' руб.<',explode('new-money-ballans">',$url)[1])[0];
+$kieu=explode('<',explode('/work-youtube">',$url)[1])[0];
+// $fun=explode('&',explode('&dop_func=',$url)[1])[0];
+$id=explode('"',explode('ads_id_',$url)[1])[0];
+$ha1=explode("')",explode("hash=",$url)[1])[0];
+//echo "Tên Của Bạn Là : $ten\n";
+$ktt=explode("'",explode("false; funcjs['",$url)[1])[0];
+$cong=explode('<',explode('color:#9d0000;">',$url)[1])[0];
+////////////////////////// Lấy Thông Tin //////////////////////////
+
+
+
+$q2="Host:aviso.bz";
+$q3="x-requested-with:XMLHttpRequest";
+$q4="user-Agent:$uss";
+$q5="referer:https://aviso.bz/work-youtube";
+$q6="origin:https://aviso.bz";
+$q7="content-type:application/x-www-form-urlencoded; charset=UTF-8";
+$tsm1=array($f1,$q3,$q2,$q4,$q5,$q6,$q7);
+$data="id=$id&hash=$ha1&func=ads-start&user_response=&count_captcha_subscribe=&checkStepOneCaptchaSubscribe=false";
+$url1=post("https://aviso.bz/ajax/earnings/ajax-youtube.php",$tsm1,$data);
+$video=explode('&',explode('?video_id=',$url1)[1])[0];
+$time=explode('&',explode('&timer=',$url1)[1])[0];
+$re=explode('&',explode('&report_id=',$url1)[1])[0];
+$ta=explode('&',explode('&task_id=',$url1)[1])[0];
+$ha=explode('\"',explode('&hash=',$url1)[1])[0];
+
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Tên Của Bạn Là ".$do.": ".$trang."$ten\n";
+sleep(1);
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Bạn Đang Làm Nhiệm Vụ ".$do.": ".$trang."$kieu\n";
+////////////////////////// Xem Video //////////////////////////
+
+$w1="upgrade-insecure-requests:1";
+$w2="x-requested-with:mark.via.gz";
+$w3="referer:https://aviso.bz/work-youtube";
+$w4="Host:skyvideoblog.blogspot.com";
+$tsm2=array($w1,$w2,$w3,$w4,$f1);
+$url2=get("https://skyvideoblog.blogspot.com/?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1&m=1",$tsm2);
+$ii=explode('"',explode('website":{"id":"',$url2)[1])[0];
+
+// sleep($time);
+////////////////////////// Nhận Tiền //////////////////////////
+
+$mili = round(microtime(true) * 1000);
+$e1="x-requested-with:mark.via.gz";
+$e2="content-type:application/x-www-form-urlencoded; charset=UTF-8";
+$e3="referer:https://skyvideoblog.blogspot.com/?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1";
+$tsm3=array($e1,$e2,$e3.$f1,$q4);
+$data3="event=1&data=%7B%22localStorageSupported%22%3Atrue%2C%22queryString%22%3A%22%3Fvideo_id%3D$video%26timer%3D$time%26report_id%3D$re%26task_id%3D$ta%26hash%3D$ha%22%2C%22referrer%22%3A%22https%3A%2F%2Faviso.bz%2Fwork-youtube%22%2C%22websiteId%22%3A%22$ha%22%2C%22templateId%22%3A%22$t1%22%2C%22website_locale%22%3A%22en-US%22%2C%22userAgent%22%3A%22$$q4%22%2C%22clientDate%22%3A$mili%2C%22viewportInnerHeight%22%3A$t2%2C%22viewportInnerWidth%22%3A$t3%2C%22screenHeight%22%3A$t4%2C%22screenWidth%22%3A$t5%2C%22url%22%3A%22%2F%22%2C%22pagePermissionTypeValue%22%3A1%2C%22title%22%3A%22Home%22%2C%22collectionId%22%3A%$t7%22%7D&ss_cvr=$t8";
+$url3=post("https://skyvideoblog.blogspot.com/api/census/RecordHit",$tsm3,$data3);
+
+for ($i = $time; $i >= 0; $i--) {
+  echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$vang."Đợi ".$do.": ".$trang."$i ".$vang."giây";
+  flush();
+  sleep(1);
+  echo "\r";
+}
+sleep(1);
+////////////////////////// Nhận Tiền //////////////////////////
+
+$y1="x-requested-with:mark.via.gz";
+$y2="content-type:application/x-www-form-urlencoded; charset=UTF-8";
+$y3="Host:aviso.bz";
+$y4="origin:https://skyvideoblog.blogspot.com";
+$y5="referer:https://skyvideoblog.blogspot.com";
+$tsm4=array($q3,$q7,$q2,$y5,$q6,$q4);
+$data4="hash=$ha&report_id=$re&task_id=$ta&timer=$time&player_time=9.818397104904175&video_id=$video&stage=1&player_state=1";
+$url4=post("https://aviso.bz/ajax/earnings/ajax-youtube-external.php",$tsm4,$data4);
+//$cong=explode('<',explode('<b>',$url4)[1])[0];
+
+////////////////////////// Nhận Tiền //////////////////////////
+
+$i1="Cookie:$coki";
+$tsm5=array($i1);
+$url5=get("https://aviso.bz/work-youtube",$tsm5);
+$ten1=explode('<',explode('user-block-info-username">',$url5)[1])[0];
+$xu1=explode(' руб.<',explode('new-money-ballans">',$url5)[1])[0];
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Cộng ".$do.": ".$trang."$cong ".$do."| ".$green."Bạn Đang Có".$do." : ".$trang."$xu1 Rup ".$do."|\n";
+sleep(2);
+echo $xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-\n";
+usleep(200000);
+///echo $url4;
+for ($i = $g; $i >= 0; $i--) {
+  echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$vang."Đợi ".$do.": ".$trang."$i ".$vang."Giây";
+  flush();
+  sleep(1);
+  echo "\r";
+}
+}else{
+  for ($i = 3; $i >= 0; $i--) {
+    echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Đang Kiếm Job".$do." : ".$trang."Youtube";
+    flush();
+    sleep(1);
+    echo "\r";
+}
+}
+
+
+
+
+
+
+
+$ra='bold;"
+                   value="';
+
+
+
+
+$f1="Cookie:$coki";
+$tsm1=array($f1);
+$v1=get("https://aviso.bz/work-serf",$tsm1);
+$id=explode('"',explode('id="serf-id-',$v1)[1])[0];
+$ha=explode("'",explode("('".$id."','",$v1)[1])[0];
+$cong=explode('<',explode('help;color:#9d0000;">',$v1)[1])[0];
+
+$a1="Host:aviso.bz";
+$a2="x-requested-with:XMLHttpRequest";
+$a5="content-type:application/x-www-form-urlencoded; charset=UTF-8";
+$a6="origin: https://aviso.bz";
+$a7="referer: https://aviso.bz/work-youtube";
+$us="user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0";
+$tsm2=array($a1,$a2,$a5,$a6,$a7,$f1,$us);
+$url=post("https://aviso.bz/ajax/earnings/ajax-serf.php",$tsm2,"id=$id&hash=$ha&func=go-serf");
+
+$v2=json_decode($url,true);
+$coc2=$v2['html'];
+if($coc2==false){continue;}
+$trl2=explode(":",explode("open('",$coc2)[1])[0];
+//echo $trl2;
+$b2="upgrade-insecure-requests:1";
+$d1="Host:twiron.com";
+$d2="referer:https://aviso.bz/";
+$tsm20=array($d1,$d2,$b2,$us);
+
+
+if($trl2=="https"){
+
+
+$url2=explode("')",explode("open('https:",$coc2)[1])[0];}
+elseif($trl2=="http"){
+$url2=explode("')",explode("open('http:",$coc2)[1])[0];}
+else{continue;}
+$tim=explode('<',explode('Таймер: <b>',$v1)[1])[0];
+
+
+
+$v3=get("https:".$url2."",$tsm20);
+
+
+
+$key3=explode('"',explode('?sid=',$v3)[1])[0];
+if($key3==false){continue;}
+
+
+
+$v4=get("https://twiron.com/vlss?sid=$key3",$tsm20);
+$key4=explode('")',explode('sid=',$v4)[1])[0];
+
+
+
+
+
+for ($i = 4; $i >= 0; $i--) {
+  echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Đang Kiếm Job".$do." : ".$trang."Lướt Web";
+  flush();
+  sleep(1);
+  echo "\r";}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Tên Của Bạn Là ".$do.": ".$trang."$ten\n";
+@sleep(1);
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Bạn Đang Làm Nhiệm Vụ ".$do.": ".$trang."Lướt web\n";
+if($key4==false){continue;}
+for($ne=$tim;$ne>-1;$ne--){echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Đang Lướt Web Đợi".$do." : ".$trang."$ne \r";sleep(1);}
+$v5=get("https://twiron.com/vlss?view=ok&sid=$key4",$tsm20);
+$key5=explode('"',explode('sid=',$v5)[1])[0];
+if($key5==false){continue;}
+$v6=get("https://twiron.com/vlss?view=ok&ds=clicked&sid=$key5",$tsm20);
+
+$l8=get("https://aviso.bz/payment",$tsm1);
+$xu1=explode(' руб.<',explode('new-money-ballans">',$l8)[1])[0];
+echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Cộng ".$do.": ".$trang."$cong ".$do."| ".$green."Bạn Đang Có".$do." : ".$trang."$xu1 Rup ".$do."|\n";
+echo $xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-".$xduong."-".$hong."-".$trang."-".$do."-\n";
+usleep(200000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
