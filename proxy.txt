@@ -83,3 +83,17 @@ if($caa1 == "3"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/aviso'));
 }
 
+
+$caa1=trim(fgets(STDIN));
+if($caa1 == "4"){
+eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/HamsterKombat.php'));
+
+}
+
+
+$caa1=trim(fgets(STDIN));
+if($caa1 == "5"){
+eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Yescoin.php'));
+
+}
+
