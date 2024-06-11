@@ -56,8 +56,6 @@ echo $xduong."[4] HamsterKombat\n";
 echo $trang."[5]Yescoin\n";
 echo" >>>>>>>>>>>>>>>>>>> ";
 
-
-
 $caa1=trim(fgets(STDIN));
 if($caa1 == "1"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Matich'));
@@ -65,8 +63,6 @@ eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main
 }
 
 
-
-$caa1=trim(fgets(STDIN));
 if($caa1 == "2"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/8.php'));
 
@@ -77,21 +73,21 @@ eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main
 
 
 
-$caa1=trim(fgets(STDIN));
+
 if($caa1 == "3"){
 
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/aviso'));
 }
 
 
-$caa1=trim(fgets(STDIN));
+
 if($caa1 == "4"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/HamsterKombat.php'));
 
 }
 
 
-$caa1=trim(fgets(STDIN));
+
 if($caa1 == "5"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Yescoin.php'));
 
