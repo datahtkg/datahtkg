@@ -52,8 +52,7 @@ echo $vang." [1] matich\n";
 echo $luc."[2] ourcoincash.xyz \n";
 
 echo $do." [3] aviso\n";
-echo $xduong."[4] HamsterKombat\n";
-echo $trang."[5]Yescoin\n";
+
 echo" >>>>>>>>>>>>>>>>>>> ";
 
 $caa1=trim(fgets(STDIN));
