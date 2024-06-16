@@ -62,6 +62,19 @@ $hong = "\033[1;35m";
 $trang = "\033[1;37m";
 
 
+function banner($red, $green, $blue, $yellow, $cyan, $pink) {
+    $text = "
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {$red}CODER:{$green}Tiến Đạt 
+{$red}DOME faucetpay: danghoangk08@gmail.com
+{$red}YOUTUBE:{$green}TIẾN >
+  {$red}TELEGRAM:{$green}datvip010     {$red}Name:{$green}Đạt
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    ";
+    echo $text;
+
+
+
 echo $vang." [1] matich\n";
 
 
