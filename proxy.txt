@@ -47,7 +47,7 @@ $hong = "\033[1;35m";
 $trang = "\033[1;37m";
 
 
-function banner($red, $green, 
+
 
 
 echo $vang." [1] matich\n";
