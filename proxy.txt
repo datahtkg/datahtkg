@@ -1,19 +1,4 @@
-function checkVPN() {
-    // Lấy danh sách các giao diện mạng
-    $networkInterfaces = shell_exec('ifconfig -a 2>/dev/null');
 
-    // Kiểm tra nếu có tồn tại giao diện 'tun0' hoặc 'tap0'
-    if (preg_match('/tun0|tap0/i', $networkInterfaces)) {
-        return true;
-    }
-    return false;
-}
-
-// Sử dụng hàm
-if (checkVPN()) {
-    echo "Silakan Matikan Vpn Anda\n";
-    exit;
-} else {
     
 $lam="\033[1;34m";
 $tmi="\033[1;34m";
@@ -111,4 +96,4 @@ if($caa1 == "5"){
 eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Yescoin.php'));
 
 }
-}
+
