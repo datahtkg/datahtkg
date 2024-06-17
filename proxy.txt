@@ -94,6 +94,10 @@ eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main
 }
 
 
+if($caa1 == "4"){
+eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Yescoin.php'));
+}
+
 
 
 
