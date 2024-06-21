@@ -261,9 +261,9 @@ echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$green."Bạn Đang Làm Nhiệm V�
 $w1="upgrade-insecure-requests:1";
 $w2="x-requested-with:mark.via.gz";
 $w3="referer:https://aviso.bz/work-youtube";
-$w4="Host:premiumvideoblogs.blogspot.com/";
+$w4="Host:premiumvideoblog.blogspot.com/";
 $tsm2=array($w1,$w2,$w3,$w4,$f1);
-$url2=get("https://premiumvideoblogs.blogspot.com//?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1&m=1",$tsm2);
+$url2=get("https://premiumvideoblog.blogspot.com//?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1&m=1",$tsm2);
 $ii=explode('"',explode('website":{"id":"',$url2)[1])[0];
 
 // sleep($time);
@@ -272,10 +272,10 @@ $ii=explode('"',explode('website":{"id":"',$url2)[1])[0];
 $mili = round(microtime(true) * 1000);
 $e1="x-requested-with:mark.via.gz";
 $e2="content-type:application/x-www-form-urlencoded; charset=UTF-8";
-$e3="referer:https://premiumvideoblogs.blogspot.com//?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1";
+$e3="referer:https://premiumvideoblog.blogspot.com//?video_id=$video&timer=$time&report_id=$re&task_id=$ta&hash=$ha&m=1";
 $tsm3=array($e1,$e2,$e3.$f1,$q4);
 $data3="event=1&data=%7B%22localStorageSupported%22%3Atrue%2C%22queryString%22%3A%22%3Fvideo_id%3D$video%26timer%3D$time%26report_id%3D$re%26task_id%3D$ta%26hash%3D$ha%22%2C%22referrer%22%3A%22https%3A%2F%2Faviso.bz%2Fwork-youtube%22%2C%22websiteId%22%3A%22$ha%22%2C%22templateId%22%3A%22$t1%22%2C%22website_locale%22%3A%22en-US%22%2C%22userAgent%22%3A%22$$q4%22%2C%22clientDate%22%3A$mili%2C%22viewportInnerHeight%22%3A$t2%2C%22viewportInnerWidth%22%3A$t3%2C%22screenHeight%22%3A$t4%2C%22screenWidth%22%3A$t5%2C%22url%22%3A%22%2F%22%2C%22pagePermissionTypeValue%22%3A1%2C%22title%22%3A%22Home%22%2C%22collectionId%22%3A%$t7%22%7D&ss_cvr=$t8";
-$url3=post("https://premiumvideoblogs.blogspot.com//api/census/RecordHit",$tsm3,$data3);
+$url3=post("https://premiumvideoblog.blogspot.com//api/census/RecordHit",$tsm3,$data3);
 
 for ($i = $time; $i >= 0; $i--) {
   echo $do."[".$vang."TIẾN ĐẠT".$do."] ".$vang."Đợi ".$do.": ".$trang."$i ".$vang."giây";
@@ -289,8 +289,8 @@ sleep(1);
 $y1="x-requested-with:mark.via.gz";
 $y2="content-type:application/x-www-form-urlencoded; charset=UTF-8";
 $y3="Host:aviso.bz";
-$y4="origin:https://premiumvideoblogs.blogspot.com/";
-$y5="referer:https://premiumvideoblogs.blogspot.com/";
+$y4="origin:https://premiumvideoblog.blogspot.com/";
+$y5="referer:https://premiumvideoblog.blogspot.com/";
 $tsm4=array($q3,$q7,$q2,$y5,$q6,$q4);
 $data4="hash=$ha&report_id=$re&task_id=$ta&timer=$time&player_time=9.818397104904175&video_id=$video&stage=1&player_state=1";
 $url4=post("https://aviso.bz/ajax/earnings/ajax-youtube-external.php",$tsm4,$data4);
