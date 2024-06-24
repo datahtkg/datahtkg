@@ -45,58 +45,8 @@ $vang = "\033[1;33m";
 $xduong = "\033[1;34m";
 $hong = "\033[1;35m";
 $trang = "\033[1;37m";
-$logo ="
-                \033[1;32m╔════════════════════════════════╗
-                \033[1;32m║\033[1;96m\033[1;91m\033[1;34m➽ Telegram : \033[1;35m@datvip010   \033[1;32m              ║
-                \033[1;32m║\033[1;96m\033[1;91m\033[1;92m➽ Youtube : \033[1;31mTIEN DAT          \033[1;32m          ║
-                \033[1;32m║\033[1;96m\033[1;91m\033[1;37m➽ Bản Quyền By : \033[1;90mTIEN DAT    \033[1;32m           ║
-                \033[1;32m║\033[1;96m\033[1;91m\033[1;37m➽ fauectpay: \033[1;90mdanghoangk08@gmail.com    \033[1;32m ║
-                \033[1;32m╚════════════════════════════════╝        
-\n";
-echo "$logo";
-
-
-
-
-echo"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNHẬP \033[1;31m[\033[1;33m 1 \033[1;31m] \033[1;32m matich \033[1;31m[\033[1;33mMới\033[1;31m]\n";
-usleep(50000);
-echo"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNHẬP \033[1;31m[\033[1;33m 2 \033[1;31m] \033[1;32m ourcoincash.xyz \033[1;31m[\033[1;33mMới\033[1;31m]\n";
-usleep(50000);
-echo"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNHẬP \033[1;31m[\033[1;33m 3 \033[1;31m] \033[1;32m aviso \033[1;31m[\033[1;33mMới\033[1;31m]\n";
-usleep(50000);
-echo"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNHẬP \033[1;31m[\033[1;33m 4 \033[1;31m] \033[1;32m 9faucet.top \033[1;31m[\033[1;33mMới\033[1;31m]\n";
-usleep(50000);
-
-echo"\033[1;31m[\033[1;37m=.=\033[1;31m] \033[1;37m=> \033[1;32mNHẬP\033[1;37m =>: \033[1;33m";
-
-$caa1=trim(fgets(STDIN));
-if($caa1 == "1"){
-eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Matich'));
+while (true) {
+echo "script offline";
 
 }
-
-
-if($caa1 == "2"){
-eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/8.php'));
-
-}
-
-
-
-
-
-
-
-if($caa1 == "3"){
-
-eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/aviso'));
-}
-
-
-if($caa1 == "4"){
-eval(file_get_contents('https://raw.githubusercontent.com/datahtkg/datahtkg/main/Yescoin.php'));
-}
-
-
-
 
