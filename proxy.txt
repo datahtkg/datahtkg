@@ -46,7 +46,7 @@ $xduong = "\033[1;34m";
 $hong = "\033[1;35m";
 $trang = "\033[1;37m";
 while (true) {
-echo "script offline";
+echo "script offline /n";
 
 }
 
